@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BootStrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body class="container-fluid  bg-dark">
+
+    <div class="row">
+
+        <div class="col-sm-12 col-md-4 my-3">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h1 class="card-title">Lyric Generator</h1>
+                    <small>Type in an artist and a song title to recieve the <strong>song lyrics!</strong></small>
+                    <div id="form" class="mt-5">
+                        <div class="form-group">
+                            <label for="artist">Artist</label>
+                            <input class="form-control" type="text" id="artist" value="Ed Sheeran"
+                                placeholder="Ed Sheeran">
+                        </div>
+                        <div class="form-group">
+                            <label for="artist">Song Title</label>
+                            <input class="form-control" type="text" id="song" value="Best Part of Me"
+                                placeholder="Best Part of Me">
+                        </div>
+                        <button class="btn btn-primary" onclick="getSong()">Submit</button>
+                        <button class="btn btn-outline-danger" onclick="reset()">Clear</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-8 my-3">
+
+            <article class="card">
+
+                <section class="card-body">
+
+                    <h2 class="card-title text-capitalize" id="gen-artist">Sample Artist</h2>
+                    <h4 class="text-capitalize" id="gen-title">Song Title</h4>
+                    <p class="card-text" id="gen-song">
+                        Incididunt mollit ipsum proident quis velit Lorem. Consectetur adipisicing sit
+                        officia ut voluptate qui eu tempor incididunt amet eu enim veniam pariatur.
+                        Esse adipisicing elit veniam aliqua culpa elit officia voluptate nulla esse.
+                        Laboris nulla adipisicing labore elit sunt ea aute consequat.
+                    </p>
+
+                </section>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
